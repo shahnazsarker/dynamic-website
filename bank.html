@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Banking Page</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-5">Bank Services with <span class="text-red-600 text-7xl font-serif"> Amounts
+            </span>
+        </h1>
+    </header>
+    <main class='w-3/4 mx-auto'>
+        <section class='mt-5'>
+            <div class="grid grid-cols-3  gap-4 text-center text-white">
+                <div class='bg-gradient-to-r from-green-400 to-blue-500 m-8 p-8 rounded-md'>
+                    <h3 class='text-2xl'>Deposit</h3>
+                    <h3 class='text-3xl'>$<span id='deposit-total'>2000</span></h3>
+                </div>
+                <div class='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  m-8 p-8 rounded-md'>
+                    <h3 class='text-2xl'>Withdraw</h3>
+                    <h3 class='text-3xl'>$00</h3>
+                </div>
+                <div class='bg-gradient-to-r from-yellow-400 to-purple-500 m-8 p-8 rounded-md'>
+                    <h3 class='text-2xl'>Balance</h3>
+                    <h3 class='text-3xl'>$<span id='balance-total'>5000000</span></h3>
+                </div>
+
+
+            </div>
+        </section>
+        <section>
+
+            <div class='grid grid-cols-2 '>
+                <div class="text-center bg-green-100 border-b-2 border-green-300 m-8 p-8 rounded-md">
+                    <h3 class='text-2xl  my-5'>Deposit here</h3>
+                    <input id="deposit-mail" class="text-2xl text-center my-1" type="text"
+                        placeholder="Enter your email"><br>
+                    <input id="deposit-amount" class='text-2xl text-center my-1 ' type="number"
+                        placeholder="amount to deposit"><br>
+                    <button id="deposit-submit"
+                        class="text-xl text-center my-2 border-1 px-3 py-1 rounded-md bg-green-300 text-white ">Deposit</button>
+                </div>
+                <div class="text-center bg-red-100 border-b-2 border-red-300 m-8 p-8 rounded-md">
+                    <h3 class='text-2xl  my-5'>Withdraw here</h3>
+                    <input id="withdraw-mail" class="text-2xl text-center my-1" type="text"
+                        placeholder="Enter your email"><br>
+                    <input id="withdraw-amount" class='text-2xl text-center my-1 ' type="number"
+                        placeholder="amount to withdraw"><br>
+                    <button id="withdraw-submit"
+                        class="text-xl text-center my-2 border-1 px-3 py-1 rounded-md bg-red-300 text-white ">Withdraw</button>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
